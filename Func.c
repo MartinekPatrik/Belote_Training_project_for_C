@@ -9,6 +9,8 @@
 
 #define Player_Count 4
 
+extern int a;
+
 #ifdef _WIN32
 #include <windows.h>
 #define CLEAR() system("cls")
@@ -53,9 +55,11 @@ int compareTeamCalls(Player* Players);
 void PlayGame(Player* Players);
 void FreeMemory(Player* Players, Cards* Deck);
 void test();
+void countToTen(int n);
 
 int game() {
     test();
+    countToTen(1);
     // Allocate memory for the deck dynamically
     Cards* Deck = (Cards*)calloc(32, sizeof(Cards));
     if (!Deck) {
@@ -100,6 +104,14 @@ int game() {
 
     FreeMemory(Players, Deck);  // Free all dynamically allocated memory
     return 0;
+}
+
+void countToTen(int n) {
+    if (n > 10) {
+        return; // Base case: stop recursion when n is greater than 10
+    }
+    printf("%d\n", n); // Print the current number
+    countToTen(n + 1); // Recursive call: count to the next number
 }
 
 void FreeMemory(Player* Players, Cards* Deck) {

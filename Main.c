@@ -18,12 +18,12 @@ typedef enum {
 
 void displayMenu() {
     printf("Menu:\n");
-    printf("play - Play Game\n");
-    printf("view - View Leaderboard\n");
-    printf("delete - Delete Leaderboard\n");
-    printf("search - Search by Points\n");
-    printf("exit - Exit\n");
-    printf("Enter your choice: ");
+    printf("play - Igraj igru\n");
+    printf("view - Pogledaj tablicu bodova\n");
+    printf("delete - Izbrisi tablicu bodova\n");
+    printf("search - Pretrazi po bodovima\n");
+    printf("exit - Izadi iz programa\n");
+    printf("Unesite odabir: ");
 }
 
 // Convert string to corresponding enum value
