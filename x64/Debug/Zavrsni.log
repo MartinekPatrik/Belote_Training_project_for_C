@@ -1,6 +1,6 @@
 ﻿  Func.c
-C:\Users\marti\Documents\GitHub\Belote\Func.c(203,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\marti\Documents\GitHub\Belote\Func.c(637,26): warning C4098: 'PlayGame': 'void' function returning a value
-C:\Users\marti\Documents\GitHub\Belote\Func.c(647,21): warning C4098: 'PlayGame': 'void' function returning a value
-C:\Users\marti\Documents\GitHub\Belote\Func.c(659,25): warning C4098: 'PlayGame': 'void' function returning a value
+C:\Users\marti\Documents\GitHub\Belote\Func.c(202,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\marti\Documents\GitHub\Belote\Func.c(636,26): warning C4098: 'PlayGame': 'void' function returning a value
+C:\Users\marti\Documents\GitHub\Belote\Func.c(646,21): warning C4098: 'PlayGame': 'void' function returning a value
+C:\Users\marti\Documents\GitHub\Belote\Func.c(658,25): warning C4098: 'PlayGame': 'void' function returning a value
   Zavrsni.vcxproj -> C:\Users\marti\Documents\GitHub\Belote\x64\Debug\Zavrsni.exe

@@ -47,7 +47,7 @@ int getValidPoints() {
     int points;
     while (1) {
         if (scanf("%d", &points) != 1) {  // If input is not a valid integer
-            printf("Invalid input! Please enter a valid integer: ");
+            printf("Krivo upisani broj! Upisite ponovo: ");
             while (getchar() != '\n');  // Clear the invalid input
         }
         else {

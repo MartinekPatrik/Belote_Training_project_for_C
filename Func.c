@@ -110,7 +110,6 @@ void countToTen(int n) {
     if (n > 10) {
         return; // Base case: stop recursion when n is greater than 10
     }
-    printf("%d\n", n); // Print the current number
     countToTen(n + 1); // Recursive call: count to the next number
 }
 
@@ -257,11 +256,11 @@ int HasSuit(Player* player, char suit) {
 // Choose the trump suit at the start of the game
 void ChooseTrumpCard(Player* player) {
     if (!player->isBot) {
-        printf("%d. igrac. Vaša ruka je:\n", player->ID);
+        printf("Igrac %d. Vaša ruka je:\n", player->ID);
         for (int i = 0; i < player->cardCount - 2; i++) {
             printf(" %c%c", player->Hand[i].Color, player->Hand[i].Type);
         }
-        printf("\n%d. igrac bira adut (Z/L/K/S): ", player->ID);
+        printf("\nIgrac %d. bira adut (Z/L/K/S): ", player->ID);
         do {
             printf("Izaberi adut (Z, L, K, S): ");
             scanf_s(" %c", &TrumpColor, 1);
@@ -278,7 +277,7 @@ void ChooseTrumpCard(Player* player) {
 
 // Handle the turn for a human player
 Cards HumanTurn(Player* player, char* leadSuit) {
-    printf("%d. igrac. Vaša ruka je:\n", player->ID);
+    printf("Igrac %d. Vaša ruka je:\n", player->ID);
     for (int i = 0; i < player->cardCount; i++) {
         printf(" %c%c", player->Hand[i].Color, player->Hand[i].Type);
     }
@@ -318,7 +317,7 @@ Cards HumanTurn(Player* player, char* leadSuit) {
         *leadSuit = playedCard.Color; // Set the lead suit if it's the first card played
     }
 
-    printf("%d. igrac igra %c%c.\n", player->ID, playedCard.Color, playedCard.Type);
+    printf("Igrac %d. igra %c%c.\n", player->ID, playedCard.Color, playedCard.Type);
     return playedCard;
 }
 
@@ -361,7 +360,7 @@ int DetermineRoundWinner(Player* Players, Cards playedCards[Player_Count], char 
         }
     }
 
-    printf("%d. igrac pobjeduje rundu.\n", Players[winningIndex].ID);
+    printf("Igrac %d. pobjeduje rundu.\n", Players[winningIndex].ID);
     return winningIndex;
 }
 
@@ -540,7 +539,7 @@ void PlayGame(Player* Players) {
             CLEAR();
             printf("=== Prosla runda ===\n");
             for (int i = 0; i < Player_Count; i++) {
-                printf("%d. igrac igra %c%c\n", i + 1, lastPlayedCards[i].Color, lastPlayedCards[i].Type);
+                printf("Igrac %d. igra %c%c\n", i + 1, lastPlayedCards[i].Color, lastPlayedCards[i].Type);
             }
             printf("Pobjednik prosle runde: Igrac %d\n", lastRoundWinner + 1);
             printf("===================\n\n");
