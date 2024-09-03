@@ -1,7 +1,6 @@
-﻿  Main.c
-C:\Users\marti\Documents\Belot\Zavrsni\Main.c(191,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\marti\Documents\Belot\Zavrsni\Main.c(253,17): warning C4473: 'scanf_s' : not enough arguments passed for format string
-C:\Users\marti\Documents\Belot\Zavrsni\Main.c(253,17): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-C:\Users\marti\Documents\Belot\Zavrsni\Main.c(253,17): message : the missing variadic argument 2 is required by format string '%c'
-C:\Users\marti\Documents\Belot\Zavrsni\Main.c(253,17): message : this argument is used as a buffer size
-  Zavrsni.vcxproj -> C:\Users\marti\Documents\Belot\Zavrsni\x64\Debug\Zavrsni.exe
+﻿  Func.c
+C:\Users\marti\Documents\GitHub\Belote\Func.c(191,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\marti\Documents\GitHub\Belote\Func.c(625,26): warning C4098: 'PlayGame': 'void' function returning a value
+C:\Users\marti\Documents\GitHub\Belote\Func.c(635,21): warning C4098: 'PlayGame': 'void' function returning a value
+C:\Users\marti\Documents\GitHub\Belote\Func.c(647,25): warning C4098: 'PlayGame': 'void' function returning a value
+  Zavrsni.vcxproj -> C:\Users\marti\Documents\GitHub\Belote\x64\Debug\Zavrsni.exe
