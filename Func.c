@@ -9,7 +9,7 @@
 
 #define Player_Count 4
 
-extern int a;
+extern int a = 0;
 
 #ifdef _WIN32
 #include <windows.h>
@@ -93,7 +93,7 @@ int game() {
         { 'K', '7' }, { 'K', '8' }, { 'K', '9' }, { 'K', '0' }, { 'K', 'J' }, { 'K', 'Q' }, { 'K', 'K' }, { 'K', 'A' }
     }, 32 * sizeof(Cards));
 
-    Players[0].isBot = 0;
+    Players[0].isBot = a;
     Players[1].isBot = 1;
     Players[2].isBot = 1;
     Players[3].isBot = 1;
@@ -256,7 +256,7 @@ int HasSuit(Player* player, char suit) {
 // Choose the trump suit at the start of the game
 void ChooseTrumpCard(Player* player) {
     if (!player->isBot) {
-        printf("Igrac %d. Vaša ruka je:\n", player->ID);
+        printf("Igrac %d. Vasa ruka je:\n", player->ID);
         for (int i = 0; i < player->cardCount - 2; i++) {
             printf(" %c%c", player->Hand[i].Color, player->Hand[i].Type);
         }
@@ -277,7 +277,7 @@ void ChooseTrumpCard(Player* player) {
 
 // Handle the turn for a human player
 Cards HumanTurn(Player* player, char* leadSuit) {
-    printf("Igrac %d. Vaša ruka je:\n", player->ID);
+    printf("Igrac %d. Vasa ruka je:\n", player->ID);
     for (int i = 0; i < player->cardCount; i++) {
         printf(" %c%c", player->Hand[i].Color, player->Hand[i].Type);
     }
@@ -619,7 +619,7 @@ void PlayGame(Player* Players) {
         TeamPoints[1] += callPoints[1];
     }
     printf("\n===================\n\n");
-    printf("Zavrsni bodovin");
+    printf("Zavrsni bodovi\n");
     printf("Tim 1: %d\n", TeamPoints[0]);
     printf("Tim 2: %d\n", TeamPoints[1]);
     while (1) {
