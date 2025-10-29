@@ -1,6 +1,6 @@
-#Belote Training Project for C
+# Belote Training Project for C
 
-##Opis
+## Opis
 
 Ovaj projekt je napravljen kao vježba za fakultet, s ciljem uvježbavanja programiranja u jeziku C i rada s datotekama.
 Tema projekta je kartaška igra Belote, a projekt služi kao praktičan primjer primjene osnovnih koncepata C programiranja, poput:
